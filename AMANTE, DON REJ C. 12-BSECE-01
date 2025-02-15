@@ -1,0 +1,40 @@
+#this will be the dictionary list containing the engineering terms and definitions :3
+engineering_terms = {
+"algorithm": "A step-by-step procedure or formula for solving a problem.",
+"capacitance": "The ability of a system to store an electric charge.",
+"circuit": "A closed path through which electric current can flow.",
+"conduction": "The transfer of heat or electricity through a material.",
+"current": "The flow of electric charge through a conductor.",
+"decibel": "A unit used to measure the intensity of sound or the power level of an electrical signal.",
+"dynamics": "The study of forces and motion in mechanical systems.",
+"efficiency": "The ratio of the useful output of a system to the input.",
+"entropy": "A measure of disorder or randomness in a system.",
+"forces": "A push or pull acting on an object.",
+"frequency": "The number of occurrences of a repeating event per unit of time.",
+"heat Transfer": "The movement of heat from a region of higher temperature to a region of lower temperature.",
+"inductance": "The property of an electrical circuit that opposes changes in current.",
+"kinematics": "The study of motion without considering forces.",
+"load": "The weight or force supported by a structure or component.",
+"magnetic Field": "A field around a magnetic material within which the force of magnetism acts.",
+"ohm’s Law": "A relationship between voltage, current, and resistance in an electrical circuit.",
+"pressure": "The force exerted per unit area on a surface.",
+"resistance": "The opposition to the flow of electric current in a circuit.",
+"stress": "The internal force per unit area within materials.",
+"torque": "A rotational force that causes an object to rotate about an axis.",
+"voltage": "The potential difference between two points in an electric field.",
+"work": "The energy transferred when a force is applied to an object over a distance.",
+"wavelength": "The distance between consecutive crests or troughs of a wave.",
+"yield Strength": "The stress at which a material begins to deform plastically.",
+"momentum": "The product of an object’s mass and velocity, representing the quantity of motion.",
+"power": "The rate at which work is done or energy is transferred.",
+"viscosity": "A measure of a fluid’s resistance to flow.",
+"friction": "The force resisting the relative motion of solid surfaces or fluid layers.",
+"elasticity": "The ability of a material to return to its original shape after deformation." #not adding comma here so it would not error
+}
+
+#we will be putting what will be asked to the user for input
+engineering = input("What are you looking for lil bro: ").strip().lower()
+#I used strip lower so that the dicitonary won't be confused when you use caps lock or extra spaces
+
+print(engineering_terms.get(engineering, ""))
+#this prints the requested definition of a term
